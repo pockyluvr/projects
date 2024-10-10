@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>War Memorial Opera House</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body, html {
+            height: 100%;
+            font-family: 'Playfair Display', serif; /* Elegant serif font for body text */
+            color: #333;
+            background-color: #f8f8f8; /* Light background */
+            margin: 0;
+        }
+        .header-bg {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/96/Opera_house_%28cropped%29.jpg"); /* Background image */
+            background-position: center;
+            background-size: cover;
+            min-height: 400px; /* Adjust height as needed */
+            position: relative;
+            filter: brightness(70%); /* Darken for contrast */
+            display: flex;
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+        }
+        .header-text {
+            color: #fff;
+            font-size: 80px;
+            font-family: 'Parisienne', cursive; /* Use Parisienne font for title */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            z-index: 1; /* Ensure text is above the background */
+            text-align: center;
+        }
+        .w3-top {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for navigation */
+        }
+        .w3-button {
+            font-family: 'Inconsolata', monospace; /* Clean, modern font for buttons */
+            font-size: 18px;
+            border-radius: 25px; /* Rounded buttons */
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        .w3-button:hover {
+            background-color: #d1c4e9; /* Soft lavender on hover */
+            color: #333;
+        }
+        .calendar-container {
+            padding: 40px;
+            text-align: center;
+            background-color: #ffffff; /* White background for contrast */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin: 20px auto;
+            max-width: 800px; /* Maximum width */
+        }
+        h5 {
+            font-size: 28px;
+            color: #6f4c3e; /* Soft brown color for headings */
+            margin-bottom: 20px;
+        }
+        img {
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on images */
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #6f4c3e; /* Footer color */
+            color: white; /* Footer text color */
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s4">
+            <a href="#home" class="w3-button w3-block">HOME</a>
+        </div>
+        <div class="w3-col s4">
+            <a href="#media" class="w3-button w3-block">MEDIA</a>
+        </div>
+        <div class="w3-col s4">
+            <a href="#location" class="w3-button w3-block">LOCATION</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header with image -->
+<header class="header-bg" id="home">
+    <div class="header-text">War Memorial Opera House</div>
+</header>
+
+<!-- Main Container -->
+<div class="w3-sand w3-grayscale w3-large">
+
+    <!-- Media Container -->
+    <div class="w3-container" id="media">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MEDIA GALLERY</span></h5>
+        <p class="w3-center">Watch performances and trailers from the San Francisco Ballet:</p>
+        <div class="w3-row">
+            <div class="w3-col s12">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/A6zS8twlzj8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="w3-center">
+            <img src="opera_house.jpg" alt="Opera Image" style="width:80%; max-width:600px;">
+        </div>
+    </div>
+
+    <!-- Google Calendar Integration -->
+    <div class="calendar-container">
+        <h3>Upcoming Events</h3>
+        <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Location Container -->
+    <div class="w3-container" id="location">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FIND US</span></h5>
+        <p>We are located at:</p>
+        <p><strong>War Memorial Opera House</strong><br>301 Van Ness Ave, San Francisco, CA 94102</p>
+        <img src="The-Dancers.jpg" width="880" height="700" class="w3-image" style="width:100%">
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center">
+    <p>© 2024, Iliana Maristela. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+
+</body>
+</html>
