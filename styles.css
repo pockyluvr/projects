@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-color: #DAE4FA;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+    display: block;
+    background-color: #FFFFFF;
+    z-index: 1;
+    position: relative;
+    opacity: 60%;
+}
+
+header {
+    background-color: #AEAADE;
+    color: #FFFFFF;
+}
+
+nav {
+    background-color: #AEAADE;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: 0 0%;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+#home {
+    background-image: url(halftone%20haerin.jpg);
+}
+
+#home #font {
+    font-style: italic;
+    text-shadow: 10px 0px 10px #6F75FF;
+}
+
+footer {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-size: x-small;
+    font-family: "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* Video background */
+#background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
