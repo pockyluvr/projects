@@ -6,8 +6,7 @@ body {
     background-size: cover;
     overflow: hidden;
 }
-
-.wrapper {
+wrapper {
     width: 90%;
     max-width: 1366px;
     margin: auto;
@@ -16,17 +15,19 @@ body {
     z-index: 1;
     position: relative;
     opacity: 60%;
+    background-size: cover;
+    background-position: 0% top;
 }
 
 header {
-    background-color: #AEAADE;
     color: #FFFFFF;
 }
 
 nav {
-    background-color: #AEAADE;
+    background-color: #131314;
     text-align: center;
     margin-top: 20px;
+	 background-color: rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -51,13 +52,20 @@ li a {
 main {
     height: 650px;
     background-repeat: no-repeat;
-    background-position: 0 0%;
-    background-size: cover;
+    background-position: center top;
+    background-size: contain;
     color: #FFFFFF;
+    float: none;
+    padding-top: 30px;
+    margin: auto;
+    padding-left: 0px;
+}
+#newsphoto {
+    background-size: contain;
 }
 
 #home {
-    background-image: url(halftone%20haerin.jpg);
+    background-size: contain;
 }
 
 #home #font {
@@ -69,20 +77,69 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    width: 100vw;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
     font-size: x-small;
     font-family: "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+    width: 90%;
+    max-width: 1366px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#ditto {
+    background-size: contain;
+}
+#musicfont {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: italic;
+}
+#merch {
+
+    background-size: contain;
+}
+#beachstill {
+    background-size: contain;
+}
+#videosection {
+    background-size: contain;
 }
 
-/* Video background */
-#background-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #background-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    img {
+    display: block;
+    width: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+        font-size: medium;
+    }
