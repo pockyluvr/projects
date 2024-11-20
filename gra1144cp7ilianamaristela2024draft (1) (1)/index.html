@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Website | Iliana Maristela, 2024</title>
+<style type="text/css">
+body {
+    background-image: url("ocean.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #172629;
+    background-position: center 25;
+    text-align: center;
+    padding-bottom: 10px;
+}
+header {
+    height: 100px;
+    background-color: rgba(255,255,255,0.00);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+wrapper {
+    width: 1366px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.80);
+    border-radius: 5px;
+    box-shadow: 0px 7px 15px 5px rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 7px 15px 5px rgba(0, 0, 0, 0.40);
+    position: static;
+}
+footer {
+    width: 100%;
+    background-color: rgba(0,0,0,0.50);
+    position: fixed;
+    height: 100px;
+    bottom: 0px;
+}
+#Tabs1 ul li img {
+    height: 50px;
+    width: auto;
+    left: auto;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    text-shadow: 0px 0px 5px;
+    padding-bottom: 10px;
+}
+#Tabs1 ul li {
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    left: 28%;
+}
+#Tabs1 ul {
+    background-color: transparent;
+    border: 5px;
+    background-image: none;
+    text-align: center;
+    left: 0px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-style: italic;
+    text-shadow: 0px 0px #899EE2;
+}
+#Tabs1 {
+    background-color: transparent;
+    background-image: none;
+}
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+    background-color: rgba(237,237,237,0.24);
+}
+input , select{
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    border-color: rgba(89,136,189,1.00);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+.date  , select, .submit{
+    width: 48%;
+    margin-right: 16px;
+}
+.submit {
+    background-color: rgba(100,143,209,1.00);
+    color: rgba(255,255,255,1.00);
+    display: inline;
+}
+footer {
+    color: rgba(255,255,255,1.00);
+    text-align: center;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('sakura.jpg')">
+	
+	
+<header><img src="travel_logo.png" width="249" height="139" alt=""/></header>
+<wrapper>
+<div id="Tabs1">
+  <ul>
+    
+    <li> <a href="#tabs-1"><img src="blue_airplane_icon.png" alt="" width="2012" height="1844"><br>
+    Flights</a></li>
+    <li> <a href="#tabs-2"><img src="hotel_blue_icon.png" alt="" width="1716" height="1544"><br>
+    Hotels</a></li>
+    <li> <a href="#tabs-3"><img src="blue_car_icon.png" alt="" width="" height=""><br>
+    Cars</a></li>
+    <li><img src="cruise_blue_icon.png" alt="" width="441" height="337"><br>
+    <a href="#tabs-4">Cruises</a></li>
+    <li><img src="activities_blue_icon.png" alt="" width="1932" height="1477"><br>
+    <a href="#tabs-5">Activities</a></li>
+  </ul>
+  <div id="tabs-1"><input type="text" placeholder="Where to?">
+	  <input type="date" class="date">
+    <input type="date" class="date">
+	<select>
+	  <option value="0">Number of Travelers</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5">5</option>
+	</select><input type="submit" class="submit" value="Find Your Flight">
+	
+	</div>
+  <div id="tabs-2"><input type="text" placeholder="Select Your Stay"> 
+	<input type="date" class="date">
+	  <input type="date" class="date"><input type="submit" class="submit">
+	
+	</div>
+	
+  <div id="tabs-3" ><input type="text" placeholder="Pick-Up"><input type="date" class="date">
+    <input type="date" class="date">
+	
+	</div>
+	
+	
+  <div id="tabs-4"><input type="text" placeholder="Choose Destination"><input type="date" class="date"><input type="date" class="date">
+	</div>
+	
+  <div id="tabs-5"><input type="text" placeholder="Upcoming Activities"><input type="date" class="date"><input type="date" class="date">
+	</div>
+</div>
+</wrapper>
+	<footer><p>© 2024, Iliana Maristela.</p>
+		<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
